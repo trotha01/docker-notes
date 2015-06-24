@@ -38,3 +38,16 @@ chmod +x /Applications/Docker/initialize_docker.sh
 
 ### Load the .plist file
 ``` launchctl load ~/Library/LaunchAgents/com.user.boot2docker.plist ```
+
+# Debugging
+### check it exists in launchctl
+``` launchctl list|grep boot2docker ```
+
+### try running with launchctl
+``` launchctl start com.user.boot2docer ```
+
+check the log file ~/.boot2docker-launch.log
+
+### Use LaunchControl
+This application helps create services and will tell you when something is wrong
+http://www.soma-zone.com/LaunchControl/
