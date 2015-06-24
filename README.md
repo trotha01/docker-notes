@@ -9,9 +9,11 @@ http://blog.amussey.com/post/85117547548/docker-starting-docker-on-system-boot-o
 ```
 #!/bin/bash
 
-date           >> ~/.boot2docker-launch.log
-/usr/local/bin/boot2docker up >> ~/.boot2docker-launch.log
+echo "================"         >>  ~/.boot2docker-launch.log
+date                            >> ~/.boot2docker-launch.log
+/usr/local/bin/boot2docker up   >> ~/.boot2docker-launch.log
 echo "boot2docker up completed" >> ~/.boot2docker-launch.log
+echo "================"         >>  ~/.boot2docker-launch.log
 ```
 
 ## Make shell script executable:
