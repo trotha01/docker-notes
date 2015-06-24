@@ -1,4 +1,6 @@
 # Start boot2docker on load (osx)
+pieces taken from 
+http://blog.amussey.com/post/85117547548/docker-starting-docker-on-system-boot-on-osx-via
 
 ## Create a file for logging:
 ``` touch ~/.boot2docker-launch.log ```
